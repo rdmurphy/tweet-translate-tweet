@@ -1,0 +1,16 @@
+# Bing Translation API credentials
+ms_client_id = 'client_id'
+ms_client_secret = 'client_secret'
+
+# Twitter API credentials
+twitter_consumer_key = 'consumer_key'
+twitter_consumer_secret = 'consumer_secret'
+twitter_access_token = 'access_token'
+twitter_access_secret = 'access_secret'
+
+# Twitter account to watch, identified by ID
+watch_account_id = 'twitter_id'
+
+# Input/output language codes
+from_lang = 'en'
+to_lang = 'it'
