@@ -1,0 +1,5 @@
+lxml==3.3.0beta2
+oauthlib==0.6.0
+requests==2.1.0
+requests-oauthlib==0.4.0
+twython==3.1.2
