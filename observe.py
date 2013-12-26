@@ -12,7 +12,6 @@ class TweetStream(TwythonStreamer):
             translated_text = Translate.translate_text(data['text'].encode('utf-8'), config.from_lang, config.to_lang)
             Tweet.update(translated_text)
 
-
 stream = TweetStream(
     config.twitter_consumer_key,
     config.twitter_consumer_secret,
@@ -20,4 +19,5 @@ stream = TweetStream(
     config.twitter_access_secret
 )
 
+print('Beginning streaming.')
 stream.statuses.filter(follow=config.watch_account_id)
