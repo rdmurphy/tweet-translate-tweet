@@ -1,4 +1,4 @@
-from twython import Twython
+from twython import Twython, TwythonError
 
 import config
 
@@ -13,4 +13,8 @@ class Tweet(object):
         )
 
     def update(self, text):
-        self.client.update_status(status=text)
+        try:
+            self.client.update_status(status=text)
+        except TwythonError, e:
+            if e.error_code == 403:
+                pass
